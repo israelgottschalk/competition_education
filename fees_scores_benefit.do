@@ -10,7 +10,12 @@ INPUTS REQUIRED (place in the working directory before running):
   Raw INEP microdata (obtain via INEP's data portal, gov.br/inep):
     - DM_CURSO_2009.CSV, DM_CURSO_2012.CSV, DM_CURSO_2013.CSV, DM_CURSO_2014.CSV,
       DM_CURSO_2015.CSV, DM_CURSO_2016.CSV, DM_CURSO_2017.CSV
+      (Course_dic_2012-2017.dta, the course dictionary/crosswalk, is built
+      from these files further below -- it is not a separate input.)
     - HEP_2009.CSV, HEP_2015.CSV, HEP_2016.CSV, HEP_2017.CSV
+    - DM_DOCENTE_2015.CSV, DM_DOCENTE_2016.CSV, DM_DOCENTE_2017.CSV
+      (academic staff/qualification data, used to build the instrument
+      for programme quality)
     - MICRODADOS_ENEM_2017.CSV
     - MICRODADOS_IDD_2017.txt
     - microdados_idd_2015.csv, microdados_idd_2016.csv (built into IDD_2015.dta
@@ -18,8 +23,11 @@ INPUTS REQUIRED (place in the working directory before running):
       its raw release, corrected here via destring, dpcomma)
     - FINANCIAMENTO_CONCEDIDOS_SEMESTRE_1_<year>.csv and _SEMESTRE_2_<year>.csv
       for year in 2012, 2014, 2015, 2016, 2017
-    - Course_dic_2012-2017.dta (course dictionary/crosswalk built from the
-      raw census course-identifier files)
+    - CPC_2012.xls, CPC_2013.xls, CPC_2014.xlsx, CPC_2015.xls, CPC_2016.xls,
+      CPC_2017.xlsx (INEP's published Preliminary Course Concept results
+      spreadsheets -- a separate, published product from the microdata
+      census files above; sheet names differ by year, see the import
+      commands below)
   Author-constructed data:
     - conglomerates_crosswalk.csv: mapping of maintaining entities to their
       ultimate controlling ownership group, from the author's own desk

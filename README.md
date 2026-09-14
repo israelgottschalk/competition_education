@@ -59,9 +59,9 @@ summary, you will need, from INEP's data portal (gov.br/inep):
    `fee_differentiation.tex`, `benefit.tex`, and related files) to the
    working directory, corresponding to the tables reported in the paper.
 
-**Requirements:** Stata (version used by the author: *[CONFIRM AND ADD
-VERSION]*); user-written packages `reghdfe`, `ivreghdfe`, `estout`
-(includes `esttab`/`eststo`), and `estfe`.
+**Requirements:** Stata/MP 17 (the version used by the author); user-written
+packages `reghdfe`, `ivreghdfe`, `estout` (includes `esttab`/`eststo`), and
+`estfe`.
 
 ## Data availability statement (as it appears in the paper)
 
@@ -71,7 +71,7 @@ VERSION]*); user-written packages `reghdfe`, `ivreghdfe`, `estout`
 > publicly available for registered researchers through INEP's data
 > portal. Code to construct the market-level analysis dataset from the
 > raw INEP censuses and to reproduce all reported results is available at
-> [REPOSITORY LINK].
+> https://github.com/israelgottschalk/competition_education.
 
 ## License
 
@@ -83,4 +83,4 @@ subject to INEP's own terms of use.
 ## Contact
 
 Israel Gottschalk, Centre for Competition Policy, University of East
-Anglia. [EMAIL ADDRESS]
+Anglia. israel.gottschalk@gmail.com · [www.israelgottschalk.com](https://www.israelgottschalk.com)
